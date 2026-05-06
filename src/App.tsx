@@ -157,11 +157,11 @@ export default function App() {
             >
               Najlepsza Hurtownia w Kraju
             </motion.span>
-            <h1 className="text-6xl md:text-8xl font-serif font-bold leading-none mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-8xl font-serif font-bold leading-tight md:leading-none mb-6">
               Doskonałość <br />
               <span className="text-gold-500 italic tracking-tight">W Każdym Flakonie</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-xl">
+            <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-xl">
               Oferujemy najwyższej jakości perfumy 1:1, które zachwycają trwałością i głębią zapachu. Idealny wybór dla Twojego biznesu.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -203,7 +203,7 @@ export default function App() {
       {/* Features Section */}
       <section id="onas" className="py-24 bg-zinc-950 border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-12">
             {[
               { icon: <ShieldCheck className="text-gold-500 w-12 h-12" />, title: "Gwarancja Jakości", desc: "Każdy produkt przechodzi rygorystyczne testy trwałości i zgodności z oryginałem." },
               { icon: <Truck className="text-gold-500 w-12 h-12" />, title: "Szybka Dostawa", desc: "Zamówienia realizujemy w ciągu 24h, abyś mógł szybko uzupełnić swój asortyment." },
@@ -290,11 +290,11 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="bg-zinc-950 rounded-[3rem] p-12 md:p-24 border border-gold-500/20 shadow-2xl overflow-hidden relative">
             <div className="max-w-3xl mx-auto text-center md:text-left">
-              <h2 className="text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight">
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif font-bold mb-8 leading-tight">
                 Rozpocznij <br />
                 <span className="text-gold-400">Współpracę</span>
               </h2>
-              <p className="text-xl text-gray-400 mb-12 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-400 mb-12 leading-relaxed">
                 Jesteśmy dostępni codziennie, aby odpowiedzieć na Twoje pytania i przygotować najlepszą ofertę hurtową dla Twojej firmy.
               </p>
               
