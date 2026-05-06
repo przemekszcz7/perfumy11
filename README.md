@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Hurtownia Perfumy 1:1 - Instrukcja Wdrożenia na GitHub Pages
 
-# Run and deploy your AI Studio app
+Twoja strona jest gotowa do wdrożenia. Aby działała poprawnie pod adresem `https://przemekszcz7.github.io/perfumy11/`, wykonaj poniższe kroki:
 
-This contains everything you need to run your app locally.
+### Opcja 1: Automatyczne wdrożenie (Zalecane)
+1. Przejdź do repozytorium na GitHubie.
+2. Wejdź w **Settings** -> **Pages**.
+3. W sekcji **Build and deployment** wybierz **Source: GitHub Actions**.
+4. GitHub sam zaproponuje workflow dla "Static HTML" lub "Vite". Wybierz Vite i zaakceptuj. Strona będzie się sama aktualizować przy każdym wypchnięciu zmian (push).
 
-View your app in AI Studio: https://ai.studio/apps/b9b73b93-f892-49d2-863a-505dfe1bce94
+### Opcja 2: Ręczne wdrożenie (jeśli nie używasz Actions)
+1. Uruchom lokalnie `npm run build`.
+2. Wypchnij zawartość folderu `dist` na gałąź `gh-pages`.
+3. W ustawieniach **Pages** wybierz gałąź `gh-pages` jako źródło.
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Poprawione błędy:
+- Skonfigurowano `base: '/perfumy11/'` w `vite.config.ts`, aby ścieżki do obrazów i skryptów były poprawne na serwerach GitHub.
+- Błąd `RSS_Basic_Detect.js` jest błędem przeglądarki/wtyczki i nie wpływa na działanie strony.
