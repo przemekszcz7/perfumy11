@@ -2,11 +2,12 @@
 
 Twoja strona jest gotowa do wdrożenia. Aby działała poprawnie pod adresem `https://przemekszcz7.github.io/perfumy11/`, wykonaj poniższe kroki:
 
-### Opcja 1: Automatyczne wdrożenie (Zalecane)
-1. Przejdź do repozytorium na GitHubie.
-2. Wejdź w **Settings** -> **Pages**.
-3. W sekcji **Build and deployment** wybierz **Source: GitHub Actions**.
-4. GitHub sam zaproponuje workflow dla "Static HTML" lub "Vite". Wybierz Vite i zaakceptuj. Strona będzie się sama aktualizować przy każdym wypchnięciu zmian (push).
+### Opcja 1: Automatyczne wdrożenie (Zalecane - JUŻ SKONFIGUROWANE)
+W pliku `.github/workflows/deploy.yml` przygotowałem skrypt, który sam zbuduje i opublikuje Twoją stronę. Aby to zadziałało:
+1. Pchnij (push) wszystkie pliki do swojego repozytorium na GitHub (gałąź `main`).
+2. Wejdź w **Settings** -> **Pages** swojego repozytorium.
+3. W sekcji **Build and deployment** -> **Source** wybierz **GitHub Actions**.
+4. To wszystko! Przy każdym `push` strona odświeży się automatycznie.
 
 ### Opcja 2: Ręczne wdrożenie (jeśli nie używasz Actions)
 1. Uruchom lokalnie `npm run build`.
